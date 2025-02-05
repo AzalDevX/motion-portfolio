@@ -1,0 +1,69 @@
+{
+  "personal": {
+    "name": "Gonzalo Azaldegi",
+    "title": "Web Developer & Designer",
+    "location": "Bilbao, Bizkaia",
+    "email": "me@azaldev.com",
+    "phone": "+34-688-89-98-01",
+    "website": "azaldev.com"
+  },
+  "experience": [
+    {
+      "company": "Accenture",
+      "period": "2023 - 2024",
+      "description": "Se contribuyó a la mejora de una aplicación interna utilizando Visual Basic .NET y Python. Se implementaron soluciones de automatización para optimizar procesos internos y mejorar la eficiencia de los proyectos. Se colaboró con equipos multidisciplinarios en proyectos ágiles, aplicando metodologías Scrum para garantizar la entrega continua de funcionalidades."
+    },
+    {
+      "company": "Tu Nueva Web",
+      "period": "2024 - Actual",
+      "description": "Desarrollo de un servicio integral para la creación, alojamiento y optimización de sitios web, asegurando una presencia online segura y eficiente. Los clientes pueden centrarse en hacer crecer sus negocios mientras se gestiona la parte técnica, garantizando que los sitios sean rápidos, seguros y visibles. Se ofrece soporte y alojamiento confiable, manteniendo todo funcionando sin problemas."
+    }
+  ],
+  "education": [
+    {
+      "school": "FP TXURDINAGA",
+      "degree": "Aplicaciones Multiplataforma",
+      "period": "2023 - 2024"
+    },
+    {
+      "school": "FP TXURDINAGA",
+      "degree": "Aplicaciones Web",
+      "period": "2021 - 2023"
+    }
+  ],
+  "skills": [
+    "React",
+    "Astro",
+    "Vue",
+    "Node",
+    "Laravel",
+    "PHP",
+    "SQL",
+    "Bootstrap",
+    "TailwindCSS",
+    "HTML/CSS",
+    "JavaScript",
+    "Figma"
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Euskera",
+      "level": "Nativo"
+    },
+    {
+      "name": "English",
+      "level": "Profesional"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Blog Tech",
+      "description": "El blog, creado con Astro, ofrece contenido sobre desarrollo web, freelancing y tecnología, con un diseño minimalista y experiencia optimizada.",
+      "imageUrl": "/devflow.png"
+    }
+  ]
+}
