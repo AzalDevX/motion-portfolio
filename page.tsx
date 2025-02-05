@@ -13,7 +13,7 @@ export default function Home() {
       <HeroSection />
 
       <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div id="proyectos" className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Proyectos</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
