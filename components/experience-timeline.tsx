@@ -45,7 +45,7 @@ export function ExperienceTimeline({ experiences }: { experiences: Experience[] 
     return () => unsubscribe()
   }, [scrollYProgress, experiences.length, currentIndex, isTransitioning])
 
-  const yearProgress = useTransform(scrollYProgress, [0, 1], [2024, 2023])
+  const yearProgress = useTransform(scrollYProgress, [0, 1], [2023, 2024])
 
   const variants = {
     enter: (direction: number) => ({

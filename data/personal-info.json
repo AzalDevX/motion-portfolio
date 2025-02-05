@@ -52,18 +52,31 @@
     },
     {
       "name": "Euskera",
-      "level": "Nativo"
+      "level": "Medio-Alto"
     },
     {
       "name": "English",
-      "level": "Profesional"
+      "level": "Medio"
     }
   ],
   "projects": [
     {
       "title": "Blog Tech",
-      "description": "El blog, creado con Astro, ofrece contenido sobre desarrollo web, freelancing y tecnología, con un diseño minimalista y experiencia optimizada.",
-      "imageUrl": "/devflow.png"
+      "description": "El blog es un espacio dedicado al desarrollo web, freelancing, tecnología y proyectos personales, donde se comparten artículos, guías y reflexiones sobre programación y emprendimiento digital. Se abordan temas como frontend moderno con Astro, Vue y TailwindCSS, estrategias para freelancing y negocios digitales, automatización sin backend, tecnología y software, incluyendo distribuciones Linux y gadgets, además del desarrollo de herramientas y templates. Construido con Astro y TailwindCSS, el blog ofrece una experiencia rápida, minimalista y optimizada para SEO y accesibilidad, garantizando una lectura fluida y eficiente sin necesidad de backend.",
+      "imageUrl": "/devflow.png",
+      "link": "https://lalo.lol/blog"
+    },
+    {
+      "title": "TuNuevaWeb",
+      "description": "Tu Nueva Web se especializa en la creación de soluciones web modernas, accesibles y optimizadas, permitiendo a cualquier persona o negocio establecer su presencia en línea de forma rápida y efectiva. Mediante el uso de tecnologías como Astro y TailwindCSS, se desarrollan sitios con un diseño minimalista, alto rendimiento y enfoque en la experiencia del usuario. Además, se ofrecen plantillas y herramientas diseñadas para facilitar la creación de páginas web sin complicaciones, sin depender de backend ni configuraciones complejas. Con una combinación de velocidad, usabilidad y buenas prácticas de SEO, Tu Nueva Web garantiza proyectos funcionales, atractivos y listos para destacar en el mundo digital.",
+      "imageUrl": "/tunuevaweb.png",
+      "link": "https://lalo.lol/tnw"
+    },
+    {
+      "title": "Bite & Smash",
+      "description": "Se diseñó y desarrolló la página web de Bite & Smash, una hamburguesería, con el objetivo de destacar su menú y su propuesta gastronómica única. La web presenta un diseño atractivo y estructurado, con secciones claras para el menú, ubicaciones, contacto y redes sociales, asegurando una navegación intuitiva y accesible. Está optimizada para dispositivos móviles y cuenta con tiempos de carga rápidos, mejorando la experiencia del usuario. Además, se trabajó en la identidad visual del negocio, utilizando una estética coherente con su marca para reforzar su presencia digital y atraer a nuevos clientes.",
+      "imageUrl": "/bite-and-smash.png",
+      "link": "https://bite-and-smash.tunuevaweb.es"
     }
   ]
 }

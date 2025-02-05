@@ -1,42 +1,44 @@
-"use client"
+'use client';
 
-import { motion } from "framer-motion"
-import { useState } from "react"
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 interface Skill {
-  name: string
-  category: string
-  level: number // 1-100
-  icon?: string
+  name: string;
+  category: string;
+  level: number; // 1-100
+  icon?: string;
 }
 
 const categories = {
-  frontend: "Frontend",
-  backend: "Backend",
-  tools: "Herramientas",
-  design: "Diseño",
-}
+  frontend: 'Frontend',
+  backend: 'Backend',
+  tools: 'Herramientas',
+  design: 'Diseño',
+};
 
 const skillsData: Skill[] = [
-  { name: "React", category: "frontend", level: 90 },
-  { name: "Vue", category: "frontend", level: 85 },
-  { name: "Astro", category: "frontend", level: 80 },
-  { name: "HTML/CSS", category: "frontend", level: 95 },
-  { name: "JavaScript", category: "frontend", level: 90 },
-  { name: "Node", category: "backend", level: 85 },
-  { name: "Laravel", category: "backend", level: 80 },
-  { name: "PHP", category: "backend", level: 85 },
-  { name: "SQL", category: "backend", level: 80 },
-  { name: "Bootstrap", category: "tools", level: 90 },
-  { name: "TailwindCSS", category: "tools", level: 95 },
-  { name: "Figma", category: "design", level: 85 },
-]
+  { name: 'React', category: 'frontend', level: 90 },
+  { name: 'Vue', category: 'frontend', level: 85 },
+  { name: 'Astro', category: 'frontend', level: 80 },
+  { name: 'HTML/CSS', category: 'frontend', level: 95 },
+  { name: 'JavaScript', category: 'frontend', level: 90 },
+  { name: 'Node', category: 'backend', level: 85 },
+  { name: 'Laravel', category: 'backend', level: 80 },
+  { name: 'PHP', category: 'backend', level: 85 },
+  { name: 'SQL', category: 'backend', level: 80 },
+  { name: 'Bootstrap', category: 'tools', level: 90 },
+  { name: 'TailwindCSS', category: 'tools', level: 95 },
+  { name: 'Figma', category: 'design', level: 85 },
+];
 
 export function SkillsGrid() {
-  const [selectedCategory, setSelectedCategory] = useState<string>("all")
-  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
 
-  const filteredSkills = skillsData.filter((skill) => selectedCategory === "all" || skill.category === selectedCategory)
+  const filteredSkills = skillsData.filter(
+    (skill) => selectedCategory === 'all' || skill.category === selectedCategory
+  );
 
   return (
     <div className="space-y-8">
@@ -45,20 +47,26 @@ export function SkillsGrid() {
         className="flex flex-wrap gap-2 justify-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <CategoryButton active={selectedCategory === "all"} onClick={() => setSelectedCategory("all")}>
+        transition={{ duration: 0.5 }}>
+        <CategoryButton
+          active={selectedCategory === 'all'}
+          onClick={() => setSelectedCategory('all')}>
           Todos
         </CategoryButton>
         {Object.entries(categories).map(([key, label]) => (
-          <CategoryButton key={key} active={selectedCategory === key} onClick={() => setSelectedCategory(key)}>
+          <CategoryButton
+            key={key}
+            active={selectedCategory === key}
+            onClick={() => setSelectedCategory(key)}>
             {label}
           </CategoryButton>
         ))}
       </motion.div>
 
       {/* Skills Grid */}
-      <motion.div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" layout>
+      <motion.div
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        layout>
         {filteredSkills.map((skill) => (
           <motion.div
             key={skill.name}
@@ -69,19 +77,18 @@ export function SkillsGrid() {
             whileHover={{ scale: 1.05 }}
             onHoverStart={() => setHoveredSkill(skill.name)}
             onHoverEnd={() => setHoveredSkill(null)}
-            className="relative"
-          >
-            <div className="group relative overflow-hidden rounded-xl bg-secondary/20 p-4 transition-colors hover:bg-secondary/30">
+            className="relative">
+            <div className="group relative overflow-hidden rounded-xl bg-secondary/20 p-4 pb-6 py-7 transition-colors hover:bg-secondary/30">
               {/* Animated background */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0"
                 animate={{
-                  x: ["-100%", "100%"],
+                  x: ['-100%', '100%'],
                 }}
                 transition={{
                   duration: 3,
                   repeat: Number.POSITIVE_INFINITY,
-                  ease: "linear",
+                  ease: 'linear',
                 }}
               />
 
@@ -103,8 +110,7 @@ export function SkillsGrid() {
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: hoveredSkill === skill.name ? 1 : 0 }}
-                  className="absolute -top-8 left-1/2 -translate-x-1/2 rounded-md bg-primary px-2 py-1 text-xs text-primary-foreground"
-                >
+                  className="absolute -top-8 left-1/2 -translate-x-1/2 rounded-md bg-primary px-2 py-1 text-xs text-primary-foreground">
                   {skill.level}%
                 </motion.div>
               </div>
@@ -113,7 +119,7 @@ export function SkillsGrid() {
         ))}
       </motion.div>
     </div>
-  )
+  );
 }
 
 function CategoryButton({
@@ -121,9 +127,9 @@ function CategoryButton({
   active,
   onClick,
 }: {
-  children: React.ReactNode
-  active: boolean
-  onClick: () => void
+  children: React.ReactNode;
+  active: boolean;
+  onClick: () => void;
 }) {
   return (
     <motion.button
@@ -132,11 +138,13 @@ function CategoryButton({
       onClick={onClick}
       className={`
         px-4 py-2 rounded-full text-sm font-medium transition-colors
-        ${active ? "bg-primary text-primary-foreground" : "bg-secondary/20 text-muted-foreground hover:bg-secondary/30"}
-      `}
-    >
+        ${
+          active
+            ? 'bg-primary text-primary-foreground'
+            : 'bg-secondary/20 text-muted-foreground hover:bg-secondary/30'
+        }
+      `}>
       {children}
     </motion.button>
-  )
+  );
 }
-
