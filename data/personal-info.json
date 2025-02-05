@@ -21,16 +21,42 @@
   ],
   "education": [
     {
-      "school": "FP TXURDINAGA",
-      "degree": "Aplicaciones Multiplataforma",
-      "period": "2023 - 2024"
+      "school": "CIFP Txurdinaga LHII",
+      "degree": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
+      "period": "2023 - 2024",
+      "description": "Formación en el desarrollo de aplicaciones, utilizando tecnologías como Kotlin, con un enfoque en bases de datos y gestión de servicios.",
+      "subjects": [
+        "Programación orientada a objetos",
+        "Desarrollo de aplicaciones móviles con Android",
+        "Gestión de bases de datos",
+        "Servicios y procesos en sistemas informáticos"
+      ],
+      "projects": [
+        "Desarrollo de aplicaciones empresariales con Kotlin y .NET",
+        "Implementación de sistemas distribuidos",
+        "Creación de apps móviles",
+        "Gestión de proyectos con metodologías ágiles"
+      ]
     },
     {
-      "school": "FP TXURDINAGA",
-      "degree": "Aplicaciones Web",
-      "period": "2021 - 2023"
+      "school": "CIFP Txurdinaga LHII",
+      "degree": "Técnico Superior en Desarrollo de Aplicaciones Web",
+      "period": "2021 - 2023",
+      "description": "Especialización en el desarrollo de aplicaciones web full-stack, abordando tanto frontend como backend, con tecnologías modernas y metodologías ágiles.",
+      "subjects": [
+        "Desarrollo frontend con HTML, CSS, JavaScript y VUE",
+        "Programación backend con PHP y /Laravel",
+        "Diseño web responsive y accesibilidad"
+      ],
+      "projects": [
+        "Desarrollo de aplicaciones web dinámicas (SPA y SSR)",
+        "Implementación de APIs RESTful",
+        "Optimización de rendimiento y SEO",
+        "Integración de bases de datos SQL"
+      ]
     }
   ],
+
   "skills": [
     "React",
     "Astro",
@@ -62,21 +88,27 @@
   "projects": [
     {
       "title": "Blog Tech",
-      "description": "El blog es un espacio dedicado al desarrollo web, freelancing, tecnología y proyectos personales, donde se comparten artículos, guías y reflexiones sobre programación y emprendimiento digital. Se abordan temas como frontend moderno con Astro, Vue y TailwindCSS, estrategias para freelancing y negocios digitales, automatización sin backend, tecnología y software, incluyendo distribuciones Linux y gadgets, además del desarrollo de herramientas y templates. Construido con Astro y TailwindCSS, el blog ofrece una experiencia rápida, minimalista y optimizada para SEO y accesibilidad, garantizando una lectura fluida y eficiente sin necesidad de backend.",
+      "description": "El blog es un espacio dedicado al desarrollo web, freelancing, tecnología y proyectos personales, donde se comparten artículos, guías y reflexiones sobre programación y emprendimiento digital.",
+      "longDescription": "Se abordan temas como frontend moderno con Astro, Vue y TailwindCSS, estrategias para freelancing y negocios digitales, automatización sin backend, tecnología y software, incluyendo distribuciones Linux y gadgets, además del desarrollo de herramientas y templates. Construido con Astro y TailwindCSS, el blog ofrece una experiencia rápida, minimalista y optimizada para SEO y accesibilidad, garantizando una lectura fluida y eficiente sin necesidad de backend.",
       "imageUrl": "/devflow.png",
-      "link": "https://lalo.lol/blog"
+      "link": "https://lalo.lol/blog",
+      "tags": ["Astro", "TailwindCSS", "Markdown"]
     },
     {
       "title": "TuNuevaWeb",
-      "description": "Tu Nueva Web se especializa en la creación de soluciones web modernas, accesibles y optimizadas, permitiendo a cualquier persona o negocio establecer su presencia en línea de forma rápida y efectiva. Mediante el uso de tecnologías como Astro y TailwindCSS, se desarrollan sitios con un diseño minimalista, alto rendimiento y enfoque en la experiencia del usuario. Además, se ofrecen plantillas y herramientas diseñadas para facilitar la creación de páginas web sin complicaciones, sin depender de backend ni configuraciones complejas. Con una combinación de velocidad, usabilidad y buenas prácticas de SEO, Tu Nueva Web garantiza proyectos funcionales, atractivos y listos para destacar en el mundo digital.",
+      "description": "Tu Nueva Web se especializa en la creación de soluciones web modernas, accesibles y optimizadas, permitiendo a cualquier persona o negocio establecer su presencia en línea de forma rápida y efectiva.",
+      "longDescription": "Mediante el uso de tecnologías como Astro y TailwindCSS, se desarrollan sitios con un diseño minimalista, alto rendimiento y enfoque en la experiencia del usuario. Además, se ofrecen plantillas y herramientas diseñadas para facilitar la creación de páginas web sin complicaciones, sin depender de backend ni configuraciones complejas. Con una combinación de velocidad, usabilidad y buenas prácticas de SEO, Tu Nueva Web garantiza proyectos funcionales, atractivos y listos para destacar en el mundo digital.",
       "imageUrl": "/tunuevaweb.png",
-      "link": "https://lalo.lol/tnw"
+      "link": "https://lalo.lol/tnw",
+      "tags": ["Astro", "TailwindCSS", "SEO"]
     },
     {
       "title": "Bite & Smash",
-      "description": "Se diseñó y desarrolló la página web de Bite & Smash, una hamburguesería, con el objetivo de destacar su menú y su propuesta gastronómica única. La web presenta un diseño atractivo y estructurado, con secciones claras para el menú, ubicaciones, contacto y redes sociales, asegurando una navegación intuitiva y accesible. Está optimizada para dispositivos móviles y cuenta con tiempos de carga rápidos, mejorando la experiencia del usuario. Además, se trabajó en la identidad visual del negocio, utilizando una estética coherente con su marca para reforzar su presencia digital y atraer a nuevos clientes.",
+      "description": "Se diseñó y desarrolló la página web de Bite & Smash, una hamburguesería, con el objetivo de destacar su menú y su propuesta gastronómica única.",
+      "longDescription": "La web presenta un diseño atractivo y estructurado, con secciones claras para el menú, ubicaciones, contacto y redes sociales, asegurando una navegación intuitiva y accesible. Está optimizada para dispositivos móviles y cuenta con tiempos de carga rápidos, mejorando la experiencia del usuario. Además, se trabajó en la identidad visual del negocio, utilizando una estética coherente con su marca para reforzar su presencia digital y atraer a nuevos clientes.",
       "imageUrl": "/bite-and-smash.png",
-      "link": "https://bite-and-smash.tunuevaweb.es"
+      "link": "https://bite-and-smash.tunuevaweb.es",
+      "tags": ["Astro", "TailwindCSS", "UI/UX"]
     }
   ]
 }

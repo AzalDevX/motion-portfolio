@@ -188,44 +188,6 @@ export function ExperienceTimeline({ experiences }: { experiences: Experience[] 
                 />
               ))}
             </div>
-
-            {/* Navigation arrows */}
-            <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 flex gap-4">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => {
-                  if (currentIndex > 0) {
-                    setDirection(-1)
-                    setCurrentIndex(currentIndex - 1)
-                  }
-                }}
-                className={`p-3 rounded-full ${
-                  currentIndex === 0 ? "bg-secondary/20 text-muted-foreground" : "bg-primary text-primary-foreground"
-                }`}
-                disabled={currentIndex === 0}
-              >
-                <ArrowLeft className="w-5 h-5" />
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => {
-                  if (currentIndex < experiences.length - 1) {
-                    setDirection(1)
-                    setCurrentIndex(currentIndex + 1)
-                  }
-                }}
-                className={`p-3 rounded-full ${
-                  currentIndex === experiences.length - 1
-                    ? "bg-secondary/20 text-muted-foreground"
-                    : "bg-primary text-primary-foreground"
-                }`}
-                disabled={currentIndex === experiences.length - 1}
-              >
-                <ArrowRight className="w-5 h-5" />
-              </motion.button>
-            </div>
           </div>
 
           {/* Background elements */}
