@@ -87,6 +87,14 @@
   ],
   "projects": [
     {
+      "title": "Generators Hub",
+      "description": "Colección de generadores con interfaz inspirada en Discord que incluye un generador de README y paletas de colores, diseñado para simplificar el flujo de trabajo de desarrolladores.",
+      "longDescription": "Generators Hub es una aplicación web moderna que ofrece herramientas esenciales para desarrolladores, incluyendo un generador de README con vista previa en tiempo real y un generador de paletas de colores con múltiples esquemas. Construido con Next.js 14, TypeScript y TailwindCSS, presenta una interfaz inspirada en Discord con animaciones fluidas y modo oscuro. El generador de paletas permite crear, exportar y compartir esquemas de colores en varios formatos, mientras que el generador de README facilita la creación de documentación profesional con formato Markdown. La aplicación está optimizada para SEO, es totalmente responsive y ofrece una experiencia de usuario moderna con toasts informativos y shortcuts de teclado.",
+      "imageUrl": "/gen-hub.png",
+      "link": "https://github.com/AzalDevX/generator-hub",
+      "tags": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
+    },
+    {
       "title": "Blog Tech",
       "description": "El blog es un espacio dedicado al desarrollo web, freelancing, tecnología y proyectos personales, donde se comparten artículos, guías y reflexiones sobre programación y emprendimiento digital.",
       "longDescription": "Se abordan temas como frontend moderno con Astro, Vue y TailwindCSS, estrategias para freelancing y negocios digitales, automatización sin backend, tecnología y software, incluyendo distribuciones Linux y gadgets, además del desarrollo de herramientas y templates. Construido con Astro y TailwindCSS, el blog ofrece una experiencia rápida, minimalista y optimizada para SEO y accesibilidad, garantizando una lectura fluida y eficiente sin necesidad de backend.",
@@ -103,20 +111,20 @@
       "tags": ["Astro", "TailwindCSS", "AOS"]
     },
     {
-      "title": "TuNuevaWeb",
-      "description": "Tu Nueva Web se especializa en la creación de soluciones web modernas, accesibles y optimizadas, permitiendo a cualquier persona o negocio establecer su presencia en línea de forma rápida y efectiva.",
-      "longDescription": "Mediante el uso de tecnologías como Astro y TailwindCSS, se desarrollan sitios con un diseño minimalista, alto rendimiento y enfoque en la experiencia del usuario. Además, se ofrecen plantillas y herramientas diseñadas para facilitar la creación de páginas web sin complicaciones, sin depender de backend ni configuraciones complejas. Con una combinación de velocidad, usabilidad y buenas prácticas de SEO, Tu Nueva Web garantiza proyectos funcionales, atractivos y listos para destacar en el mundo digital.",
-      "imageUrl": "/tunuevaweb.png",
-      "link": "https://lalo.lol/tnw",
-      "tags": ["Astro", "TailwindCSS", "SEO"]
-    },
-    {
       "title": "Bite & Smash",
       "description": "Se diseñó y desarrolló la página web de Bite & Smash, una hamburguesería, con el objetivo de destacar su menú y su propuesta gastronómica única.",
       "longDescription": "La web presenta un diseño atractivo y estructurado, con secciones claras para el menú, ubicaciones, contacto y redes sociales, asegurando una navegación intuitiva y accesible. Está optimizada para dispositivos móviles y cuenta con tiempos de carga rápidos, mejorando la experiencia del usuario. Además, se trabajó en la identidad visual del negocio, utilizando una estética coherente con su marca para reforzar su presencia digital y atraer a nuevos clientes.",
       "imageUrl": "/bite-and-smash.png",
       "link": "https://bite-and-smash.tunuevaweb.es",
       "tags": ["Astro", "TailwindCSS", "UI/UX"]
+    },
+    {
+      "title": "TuNuevaWeb",
+      "description": "Tu Nueva Web se especializa en la creación de soluciones web modernas, accesibles y optimizadas, permitiendo a cualquier persona o negocio establecer su presencia en línea de forma rápida y efectiva.",
+      "longDescription": "Mediante el uso de tecnologías como Astro y TailwindCSS, se desarrollan sitios con un diseño minimalista, alto rendimiento y enfoque en la experiencia del usuario. Además, se ofrecen plantillas y herramientas diseñadas para facilitar la creación de páginas web sin complicaciones, sin depender de backend ni configuraciones complejas. Con una combinación de velocidad, usabilidad y buenas prácticas de SEO, Tu Nueva Web garantiza proyectos funcionales, atractivos y listos para destacar en el mundo digital.",
+      "imageUrl": "/tunuevaweb.png",
+      "link": "https://lalo.lol/tnw",
+      "tags": ["Astro", "TailwindCSS", "SEO"]
     }
   ]
 }
