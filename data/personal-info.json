@@ -95,6 +95,14 @@
       "tags": ["Astro", "TailwindCSS", "Markdown"]
     },
     {
+      "title": "Plantilla Bento Portfolio",
+      "description": "Bento Portfolio es una plantilla moderna y responsive construida con Astro y Tailwind CSS, ideal para portfolios profesionales. Ofrece un diseño Bento-Grid, rendimiento ultrarrápido, modo oscuro y fácil personalización.",
+      "longDescription": "Bento Portfolio es una plantilla moderna, minimalista y responsive para portfolios profesionales, construida con Astro y Tailwind CSS para ofrecer un rendimiento ultrarrápido, diseño limpio y optimización SEO. Su estética Bento-Grid, combinada con modo oscuro, personalización sencilla y estructura modular, la hace ideal para desarrolladores, diseñadores y freelancers que buscan una presencia online atractiva y eficiente. Además, es totalmente adaptable a cualquier pantalla, fácil de mantener y de desplegar en plataformas como Cloudflare",
+      "imageUrl": "/bento.png",
+      "link": "https://github.com/AzalDevX/bento-portfolio",
+      "tags": ["Astro", "TailwindCSS", "AOS"]
+    },
+    {
       "title": "TuNuevaWeb",
       "description": "Tu Nueva Web se especializa en la creación de soluciones web modernas, accesibles y optimizadas, permitiendo a cualquier persona o negocio establecer su presencia en línea de forma rápida y efectiva.",
       "longDescription": "Mediante el uso de tecnologías como Astro y TailwindCSS, se desarrollan sitios con un diseño minimalista, alto rendimiento y enfoque en la experiencia del usuario. Además, se ofrecen plantillas y herramientas diseñadas para facilitar la creación de páginas web sin complicaciones, sin depender de backend ni configuraciones complejas. Con una combinación de velocidad, usabilidad y buenas prácticas de SEO, Tu Nueva Web garantiza proyectos funcionales, atractivos y listos para destacar en el mundo digital.",
