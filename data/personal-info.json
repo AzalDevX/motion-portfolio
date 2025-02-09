@@ -111,6 +111,14 @@
       "tags": ["Astro", "TailwindCSS", "AOS"]
     },
     {
+      "title": "QR generator",
+      "description": "Genera códigos QR personalizados con un diseño minimalista inspirado en la estética de Nothing. Este generador te permite crear QR funcionales y visualmente atractivos en segundos, manteniendo la simplicidad y elegancia.",
+      "longDescription": "Not a Thing es una herramienta web que permite crear códigos QR de manera rápida y sencilla, con un diseño único que toma inspiración de la filosofía minimalista y el estilo de Nothing. Con una interfaz limpia y sin distracciones, los usuarios pueden generar códigos QR personalizados para diferentes enlaces, ya sea para sitios web, aplicaciones, redes sociales o información de contacto. La herramienta ofrece una experiencia fluida y eficiente, garantizando códigos de alta calidad que destacan por su estética moderna y cuidada. Ideal para quienes buscan un diseño sofisticado sin renunciar a la funcionalidad.",
+      "imageUrl": "/not-a-thing.png",
+      "link": "https://notathing.tech",
+      "tags": ["Astro", "TailwindCSS", "JavaScript"]
+    },
+    {
       "title": "Bite & Smash",
       "description": "Se diseñó y desarrolló la página web de Bite & Smash, una hamburguesería, con el objetivo de destacar su menú y su propuesta gastronómica única.",
       "longDescription": "La web presenta un diseño atractivo y estructurado, con secciones claras para el menú, ubicaciones, contacto y redes sociales, asegurando una navegación intuitiva y accesible. Está optimizada para dispositivos móviles y cuenta con tiempos de carga rápidos, mejorando la experiencia del usuario. Además, se trabajó en la identidad visual del negocio, utilizando una estética coherente con su marca para reforzar su presencia digital y atraer a nuevos clientes.",
