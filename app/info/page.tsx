@@ -58,7 +58,6 @@ const contactInfo = [
     text: 'contacto@tunuevaweb.es',
     href: 'mailto:contacto@tunuevaweb.es',
   },
-  { icon: Phone, text: '+34 604 91 54 85', href: 'https://wa.me/34604915485' },
   {
     icon: Instagram,
     text: '@tunuevawebya',
@@ -525,6 +524,69 @@ export default function InfoPage() {
 
             <motion.a
               href="https://github.com/AzalDevX/astro-template"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-full text-lg font-semibold"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}>
+              <span>Descargar Template</span>
+              <motion.div
+                animate={{
+                  rotate: [0, 360],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: 'linear',
+                }}>
+                <Sparkles className="w-5 h-5" />
+              </motion.div>
+            </motion.a>
+          </div>
+        </motion.section>
+
+        {/* Vue Template Section */}
+        <motion.section
+          className="relative overflow-hidden bg-card border border-border rounded-2xl p-8 mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          whileHover={{ scale: 1.02 }}>
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5"
+            animate={{
+              x: ['100%', '-100%'],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: 'linear',
+            }}
+          />
+
+          <div className="relative">
+            <motion.h2
+              className="text-3xl font-bold mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}>
+              Vue Template
+            </motion.h2>
+
+            <motion.p
+              className="mb-6 text-muted-foreground text-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}>
+              Plantilla minimalista y moderna para Vue 3 + Vite + TailwindCSS,
+              diseñada para aplicaciones de una sola página (SPA). Incluye
+              configuración inicial optimizada y soporte para personalización
+              completa.
+            </motion.p>
+
+            <motion.a
+              href="https://github.com/AzalDevX/vue-template"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-full text-lg font-semibold"
