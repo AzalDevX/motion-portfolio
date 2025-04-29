@@ -13,7 +13,7 @@ export default function Home() {
     <main className="bg-background min-h-screen">
       <HeroSection />
 
-      <section className="py-20 px-4">
+      <section id="proyectos" className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.h2
             className="text-4xl font-bold text-foreground mb-12 text-center"
