@@ -9,6 +9,7 @@ export function HeroSection() {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  const arrowOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]); // Desaparece al hacer scroll
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
@@ -125,27 +126,28 @@ export function HeroSection() {
             </motion.div>
           ))}
         </motion.div>
-
-        <motion.button
-          className="relative px-8 py-3 bg-primary text-primary-foreground rounded-full font-medium overflow-hidden group"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}>
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary-foreground/20 to-primary/0"
-            animate={{
-              x: ['-100%', '100%'],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: 'linear',
-            }}
-          />
-          <a href="#proyectos" className="relative">
-            Ver Proyectos
-          </a>
-        </motion.button>
       </div>
+
+      {/* Arrow Down SVG */}
+      <motion.div
+        style={{ opacity: arrowOpacity }}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        animate={{
+          y: [0, 10, 0],
+        }}
+        transition={{
+          duration: 1.5,
+          repeat: Number.POSITIVE_INFINITY,
+          ease: 'easeInOut',
+        }}>
+          <img
+            src="/arrow-down.svg"
+            alt="Scroll Down"
+            className="w-10 h-10 text-foreground"
+          />
+      </motion.div>
     </div>
   );
 }
